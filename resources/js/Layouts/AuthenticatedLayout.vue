@@ -37,7 +37,19 @@ const showingNavigationDropdown = ref(false);
                                     :href="route('dashboard')"
                                     :active="route().current('dashboard')"
                                 >
-                                    Dashboard
+                                    Оформление заказа
+                                </NavLink>
+                                <NavLink
+                                    :href="route('magazin')"
+                                    :active="route().current('magazin')"
+                                >
+                                    Каталог товаров
+                                </NavLink>
+                                <NavLink
+                                    :href="route('orders')"
+                                    :active="route().current('orders')"
+                                >
+                                    Мои заказы
                                 </NavLink>
                             </div>
                         </div>
@@ -74,14 +86,14 @@ const showingNavigationDropdown = ref(false);
                                         <DropdownLink
                                             :href="route('profile.edit')"
                                         >
-                                            Profile
+                                            Настройки профиля
                                         </DropdownLink>
                                         <DropdownLink
                                             :href="route('logout')"
                                             method="post"
                                             as="button"
                                         >
-                                            Log Out
+                                            Выход
                                         </DropdownLink>
                                     </template>
                                 </Dropdown>
@@ -144,7 +156,7 @@ const showingNavigationDropdown = ref(false);
                             :href="route('dashboard')"
                             :active="route().current('dashboard')"
                         >
-                            Dashboard
+                            Личный кабинет покупателя
                         </ResponsiveNavLink>
                     </div>
 
@@ -165,14 +177,14 @@ const showingNavigationDropdown = ref(false);
 
                         <div class="mt-3 space-y-1">
                             <ResponsiveNavLink :href="route('profile.edit')">
-                                Profile
+                                Настройки профиля
                             </ResponsiveNavLink>
                             <ResponsiveNavLink
                                 :href="route('logout')"
                                 method="post"
                                 as="button"
                             >
-                                Log Out
+                                Выход
                             </ResponsiveNavLink>
                         </div>
                     </div>
